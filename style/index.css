@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 50px;
+  padding: 80px;
 }
 
 @media (max-width: 700px) {
@@ -88,17 +88,21 @@ h1 {
   font-family: 'Times New Roman', Times, serif;
   font-weight: 800;
   line-height: normal;
+  text-align: center;
 }
 @media (max-width: 500px) {
   h1 {
     font-size: 18px;
-    text-align: center;
+    margin-bottom: 20px;
   }
 }
 
 .out {
-  width: 50%;
+  width: 60%;
   padding: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 @media (max-width: 700px) {
   .out {
@@ -106,6 +110,14 @@ h1 {
     padding: 20px;
   }
 }
+
+@media (max-width: 600px) {
+  .out {
+    width: 80%;
+    padding: 20px;
+  }
+}
+
 @media (max-width: 400px) {
   .out {
     width: 90%;
@@ -125,9 +137,21 @@ h1 {
 }
 
 .cites {
-  width: 150px;
+  width: 50%;
   height: 30px;
   border: 2px solid black;
+  margin: 30px 0 0 0;
+}
+@media (max-width: 600px) {
+  .cites {
+    width: 80%;
+  }
+}
+
+@media (max-width: 450px) {
+  .cites {
+    width: 80%;
+  }
 }
 
 .card-wethear {
@@ -139,6 +163,18 @@ h1 {
   text-align: center;
   border: 5px solid green;
   background-color:lightgray;
+}
+
+@media (max-width: 600px) {
+  .card-wethear {
+    width: 80%;
+  }
+}
+
+@media (max-width: 450px) {
+  .card-wethear {
+    width: 80%;
+  }
 }
 
 .card-wethear li {

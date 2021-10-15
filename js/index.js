@@ -21,7 +21,7 @@ function getSelect() {
   
   select.id = "selectNew";
   select.classList.add("cites");
-  out.after(select);
+  out.append(select);
 }
 
 function getOptions() {
