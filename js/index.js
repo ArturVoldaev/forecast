@@ -7,11 +7,11 @@ const param = {
 console.log();
 
 const cities =  {
-  5128638 : "New York",
-  480562 : "Tula",
-  2151682 : "Rhodes",
-  324190 : "Alanya",
-  1151254 : "Phuket",
+  5128638 : "Нью-Йорк",
+  480562 : "Тула",
+  2151682 : "о. Родес",
+  324190 : "Алания",
+  1151254 : "о. Пхукет",
 
 }
 
@@ -24,7 +24,7 @@ function getSelect() {
   out.append(select);
 }
 
-function getOptions() {
+/*function getOptions() {
   let select = document.getElementById("selectNew");
   let citesArray = Object.entries(cities);
   
@@ -32,6 +32,18 @@ function getOptions() {
     let opt = document.createElement('option');
     opt.value = citesArray[i][0];
     opt.innerHTML = citesArray[i][1];
+    select.appendChild(opt);
+  }
+}*/
+
+function getOptions() {
+  let select = document.getElementById("selectNew");
+
+  for(item in cities) {
+    let opt = document.createElement('option');
+    console.log(cities);
+    opt.value = item;
+    opt.innerHTML = cities[item];
     select.appendChild(opt);
   }
 }
